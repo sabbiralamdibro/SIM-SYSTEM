@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2018 11:02:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.User" table="user" catalog="simsv2" optimistic-lock="version">
+        <id name="uid" type="java.lang.Integer">
+            <column name="uid" />
+            <generator class="identity" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="45" />
+        </property>
+        <property name="uemail" type="string">
+            <column name="uemail" length="45" />
+        </property>
+        <property name="upassword" type="string">
+            <column name="upassword" length="45" />
+        </property>
+        <property name="uroleid" type="java.lang.Integer">
+            <column name="uroleid" />
+        </property>
+    </class>
+</hibernate-mapping>

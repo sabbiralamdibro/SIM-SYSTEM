@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2018 11:02:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Role" table="role" catalog="simsv2" optimistic-lock="version">
+        <id name="roleid" type="java.lang.Integer">
+            <column name="roleid" />
+            <generator class="identity" />
+        </id>
+        <property name="roleName" type="string">
+            <column name="`role-name`" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

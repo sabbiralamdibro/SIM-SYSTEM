@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2018 11:02:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Course" table="course" catalog="simsv2" optimistic-lock="version">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="courseName" type="string">
+            <column name="course_name" length="45" />
+        </property>
+        <property name="courseHours" type="java.lang.Integer">
+            <column name="course_hours" />
+        </property>
+        <property name="fees" type="java.lang.Double">
+            <column name="fees" precision="22" scale="0" />
+        </property>
+        <property name="batchName" type="string">
+            <column name="batch_name" length="45" />
+        </property>
+        <property name="module" type="java.lang.Integer">
+            <column name="module" />
+        </property>
+        <property name="schedule" type="string">
+            <column name="schedule" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<!-- define angular app ng-app="scotchApp"-->
+<html >
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- SCROLLS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!--<script src="js/angular.js" type="text/javascript"></script>-->
+        <!-- SPELLS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        
+        <style type="text/css">
+            .header, .footer-area{
+                border: 1px solid #DDD;
+                padding: 20px;
+                margin-top: 10px;
+                box-shadow: 0px 0px 10px #DDD;
+            }
+            .content-area, .menu{
+                margin-top: 10px;
+            }
+            .sidebar, .content{
+                border: 1px solid #DDD;
+                padding: 20px;
+                box-shadow: 0px 0px 10px #DDD;
+            }
+ </style>
+    </head>
+
+    <!-- define angular controller ng-controller="Mycrtl" -->
+    <body >
+        <div class="container" >
+            <div class="row" >
+                <div class="header col-md-12" style="background: azure">
+                    <h1 style="color: #000 ; font-size: bold;"><strong>Student Information Management System</strong></h1>
+                </div>
+
+                <div class="menu col-md-12">
+                    <div class="row">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid" >
+                                <!--       <ul class="nav navbar-nav navbar-right">
+         s                               <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                                        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                                      </ul>-->
+                               
+                                
+                                <ul class="nav navbar-nav"  >
+                                    <li class="active"><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="adminmain.html" ><i class="fa fa-shield"></i> Admin Panel</a></li>
+                                    <li><a href="userstaff.html"><i class="fa fa-bandcamp" ></i> User/Staff</a></li>
+                                    <li><a href="students.html" ><i class="fa fa-comment"></i> Student</a></li>
+                                    <li><a href="about.html" ><i class="fa fa-comment"></i>About Us</a></li>
+                                    <li><a href="contact.html" ><i class="fa fa-comment"></i>Contact Us</a></li>
+                                </ul>
+                                 
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header asideTitle">
+                           
+                            <a class="navbar-brand" href="home.html">SIMS</a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <div class="col-md-12 content-area" id="main">
+
+                    <!--      <div ng-view>
+                              
+                          </div>-->
+                    <div class="row">
+                        <div class="sidebar col-md-3">
+                            <img src="a.png" class="responsive-image">
+<!--                            <ul class="">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                                <li><a href="#">Page 4</a></li>
+                                <li><a href="#">Page 5</a></li>
+
+                            </ul>-->
+                        </div>
+
+                        <div class="content col-md-9">
+
+                            <img width="100" height="355" src="logo.png" class="responsive-image">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div style="background: azure" class="col-md-12 footer-area">
+                    <!-- Footer -->
+                    <footer class="page-footer font-small unique-color-dark pt-4">
+
+                        <!-- Footer Elements -->
+                        <!--                        <div  class="container">-->
+
+                        <!--       Call to action 
+                        -->      <ul class="list-unstyled list-inline text-center py-2">
+                            <li class="list-inline-item">
+                                <h5 class="mb-1">Subscribe for free</h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!" class="btn btn-outline-white btn-rounded">Subscribe !</a>
+                            </li>
+                        </ul><!--
+                         Call to action -->
+
+
+
+                        <!--                        </div>-->
+                        <!-- Footer Elements -->
+
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                            <a href="#">sabbir.esad.r36</a>
+                        </div>
+                        <!-- Copyright -->
+
+                    </footer>
+                </div>
+                <!--  <footer class="text-center">
+                    <p>Copyright </p>
+                  </footer>-->
+
+            </div>
+        </div>
+    </body>
+
+</html>
+
+
+
+
+<div class="container-fluid"
+             style="width: 100%; margin-top: 10px; margin-bottom: 10px">
+
+            <div class="panel animated fadeInUp delay-05s" id="panel-2">
+                <div class="panel-body">
+                   
+                </div>
+                <div class="panel-heading">
+                    <span class="lead">TSP LIST</span>
+                </div>
+                <!-- end panel2 heading -->
+                <div class="panel-body" ng-app="tspapp"
+                     ng-controller="TSPController" width="100%">
+                    <ul class="list-group ">
+                        <li class="list-group-item" height="45px"
+                            ng-repeat="t in tsps">
+                            <div class="pull-left">
+                                
+  <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th class="th-sm">TSP ID
+
+      </th>
+      <th class="th-sm">TSP NAME
+
+      </th>
+      <th class="th-sm">User Name
+
+      </th>
+      <th class="th-sm">Address
+
+      </th>
+      <th class="th-sm">Phone
+
+      </th>
+      <th class="th-sm">Email
+
+      </th>
+      <th class="th-sm">Location
+
+      </th>
+      <th class="th-sm">Business Contact Name
+
+      </th>
+      <th class="th-sm">EDIT
+
+      </th>
+      <th class="th-sm">REMOVE
+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{t.tspid}}</td>
+      <td>{{t.tspname}}</td>
+      <td>{{t.username}}</td>
+      <td>{{t.tspaddress}}</td>
+      <td>{{t.tspphone}}</td>
+      <td>{{t.tspemail}}</td>
+      <td>{{t.tsplocation}}</td>
+      <td>{{t.businessContcName}}</td>
+      <td><a href="edittspbutton?gettspid={{t.tspid}}"><button id="editbuttons"
+                                                                                          type="submit" class="btn">Edit</button></a></td>
+      <td><a
+                                    href="removetsp/{{t.tspid}}"><button  id="removebuttons"
+                                                                             type="button" class="btn">Remove</button></a></td>
+
+    </tr>
+    </tbody>
+
+</table>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- panel2 body end -->
+            </div>
+            <!-- panel2 end -->
+        </div>

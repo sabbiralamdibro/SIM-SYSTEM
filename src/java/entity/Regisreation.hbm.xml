@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2018 11:02:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Regisreation" table="regisreation" catalog="simsv2" optimistic-lock="version">
+        <id name="regid" type="java.lang.Integer">
+            <column name="regid" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="`first-name`" length="45" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="`last-name`" length="45" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="courseName" type="string">
+            <column name="course_name" length="45" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="45" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

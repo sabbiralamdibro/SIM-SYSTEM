@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<!-- define angular app ng-app="scotchApp"-->
+<html >
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- SCROLLS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!--<script src="js/angular.js" type="text/javascript"></script>-->
+        <!-- SPELLS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="script.js"></script>
+        <style type="text/css">
+            .header, .footer-area{
+                border: 1px solid #DDD;
+                padding: 20px;
+                margin-top: 10px;
+                box-shadow: 0px 0px 10px #DDD;
+            }
+            .content-area, .menu{
+                margin-top: 10px;
+            }
+            .sidebar, .content{
+                border: 1px solid #DDD;
+                padding: 20px;
+                box-shadow: 0px 0px 10px #DDD;
+            }
+            .asideTitle{
+    display: block;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;    
+    text-align: center;
+   
+    font-weight: bold;
+  
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #5991b0;
+   
+    background: #43a286;
+    color: #ffffff;
+    font-size: 17px;   
+    color: #FFF;
+}
+
+.asideTitle a{
+    color: #ffffff;
+    text-align: left;
+}
+
+.bgwhite{
+    padding: 55px 20px;
+    min-height: 99px;
+    background-color: #fefefe;
+    margin: 22px 0;
+    
+    outline: 1px solid #00795f;
+    position: relative;
+    a.readmore{
+    background: #ff6633;
+    padding: 2px 9px;
+    color: #fff;
+}
+
+a.readmore:hover{
+    background: #c64b11;
+    text-decoration: none;
+}
+.fleft{ float:left !important; } .fright{ float:right !important; }
+.bggray
+{
+	background-color:#EAEAEA;
+	display:block;
+	padding: 9px;
+}
+
+    
+}
+ </style>
+    </head>
+
+    <!-- define angular controller ng-controller="Mycrtl" -->
+    <body >
+        <div class="container" >
+            <div class="row" >
+                <div class="header col-md-12" style="background: azure">
+                    <h1 style="color: #000 ; font-size: bold;"><strong>Student Information Management System</strong></h1>
+                </div>
+
+                <div class="menu col-md-12">
+                    <div class="row">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid" >
+                                <!--       <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                                        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                                      </ul>-->
+<!--                                <ul class="nav navbar-nav navbar-right">
+                                    <li style=" background-color:  #ffffff" ><a href="#" style=" color: #c80000 ; font-size: 20px; font-weight: bold"><strong>log-out</strong></a></li> 
+                                </ul>-->
+                                
+                                <ul class="nav navbar-nav"  >
+                                    <li class="active"><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="adminmain.html" ><i class="fa fa-shield"></i> Admin Panel</a></li>
+                                    <li><a href="userstaff.html"><i class="fa fa-bandcamp" ></i> User/Staff</a></li>
+                                    <li><a href="students.html" ><i class="fa fa-comment"></i> Student</a></li>
+                                    <li><a href="about.html" ><i class="fa fa-comment"></i>About Us</a></li>
+                                    <li><a href="contact.html" ><i class="fa fa-comment"></i>Contact Us</a></li>
+                                </ul>
+                                 
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">Admin Panel</a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <div class="col-md-12 content-area" id="main">
+
+                    <!--      <div ng-view>
+                              
+                          </div>-->
+                    <div class="row">
+                        <div class="sidebar col-md-3">
+                            <ul class="">
+                                <li ><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                             
+                            </ul>
+                        </div>
+<!--ng-view-->
+                        <div class="content col-md-9" >
+                            <div class="asideTitle">
+               About Us
+           </div>
+                            <br>
+                            <br>
+                            
+           
+                            <h2 style="font-size: 25px; font-weight: bold; color: #c80000 "><strong>About our Students  Information System :</strong></h2><br>
+           
+           <p>
+                      The new system will bring about efficient and effective academic information system. The concise documentation of students and staff details will tremendously improve its timely decision support.
+The project would also go a long way in fostering good perception of the information age in our various institutions and individual organization thereby breaking the ugly bone of continuous use of manual and archaic systems. It fosters on the in-depth, principles, rules and protocols of coding, scripting and hosting of database driven web pages. It will also help in making the processing of information as well as in the sport feedback faster, enlighten our young database developers and provide for them a springboard. It also stirs and gives focus to our institutions of higher learning on the facilities obtained in the use of modern system of communication.
+
+In order to produce a more classified knowledge of the subject matter, the researcher intends to;
+<br>1.	To describe the tools required to design and implement a functional Apache HTTP web, HTTP web server and MYSQL relational database server for the institution through HTML communication.
+<br>2.	To develop the system and procedure for the college is to ensure that end-users are provided with equisetic tools and data that are cost effective and easily accessible.
+  
+          <a class="readmore fright" href="#">Read more...</a> </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div style="background: azure" class="col-md-12 footer-area">
+                    <!-- Footer -->
+                    <footer class="page-footer font-small unique-color-dark pt-4">
+
+                        <!-- Footer Elements -->
+                        <!--                        <div  class="container">-->
+
+                        <!--       Call to action 
+                        -->      <ul class="list-unstyled list-inline text-center py-2">
+                            <li class="list-inline-item">
+                                <h5 class="mb-1">Subscribe for free</h5>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!" class="btn btn-outline-white btn-rounded">Subscribe !</a>
+                            </li>
+                        </ul><!--
+                         Call to action -->
+
+
+
+                        <!--                        </div>-->
+                        <!-- Footer Elements -->
+
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                            <a href="#">sabbir.esad.r36</a>
+                        </div>
+                        <!-- Copyright -->
+
+                    </footer>
+                </div>
+                <!--  <footer class="text-center">
+                    <p>Copyright </p>
+                  </footer>-->
+
+            </div>
+        </div>
+    </body>
+
+</html>
